@@ -1,0 +1,11 @@
+*,
+html,
+body {
+    font-family: Inter, monospace;
+}
+
+.dashboard--content {
+    max-width: calc(100vw - 307px);
+    margin-left: auto;
+    padding: 3em;
+}

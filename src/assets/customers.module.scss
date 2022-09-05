@@ -1,0 +1,52 @@
+.card_title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+
+  /* Gray/900 */
+
+  color: #101828;
+  margin-bottom: 24px;
+}
+
+.card_value {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height, or 122% */
+
+  letter-spacing: -0.02em;
+
+  /* Gray/900 */
+
+  color: #101828;
+  margin-bottom: 16px;
+}
+
+.increase {
+  .percentage {
+    color: #027A48;
+  }
+}
+
+.decrease {
+  svg {
+    transform: rotate(180deg);
+  }
+
+  .percentage {
+    color: #B42318;
+  }
+}
+
+.percentage {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.table_box {
+  margin-top: 48px;
+}
