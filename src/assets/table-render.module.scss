@@ -1,0 +1,61 @@
+.full__name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+
+  /* Gray/900 */
+
+  color: #101828;
+}
+
+.phone {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+
+  /* Gray/500 */
+
+  color: #667085;
+}
+
+.status {
+  padding: 2px 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 16px;
+}
+
+.successful {
+  color: #027A48 !important;
+  background: #ECFDF3;
+}
+
+.kyc_status {
+  width: 75px;
+  height: 22px;
+
+  /* Success/50 */
+
+  background: #ECFDF3;
+  border-radius: 16px;
+  padding: 2px 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+
+  /* Success/700 */
+
+  color: #027A48;
+}

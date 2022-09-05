@@ -1,0 +1,43 @@
+.card__title {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: #667085;
+}
+
+.card__value {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 44px;
+  /* identical to box height, or 122% */
+
+  letter-spacing: -0.02em;
+
+  /* Gray/900 */
+
+  color: #101828;
+}
+
+.trans_amount {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+
+  /* Gray/900 */
+
+  color: #101828;
+}
+
+.voucher_no {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+
+  /* Primary text color */
+
+  color: #101010;
+}

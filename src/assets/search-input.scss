@@ -1,0 +1,22 @@
+.MuiTextField-root {
+  &.search-input {
+    max-width: 447px;
+    width: 100%;
+
+    fieldset {
+      border-color: transparent !important;
+    }
+
+    .MuiOutlinedInput-root {
+      border-radius: 10px !important;
+      background: #FFFFFF;
+      border: 1.5px solid #DCDCDC;
+      height: 48px !important;
+      transition: all .2s;
+    }
+
+    .Mui-focused {
+      border-color: #101828;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.data-table {
+  .MuiDataGrid-columnHeaders {
+    background: #F3F3F3 !important;
+  }
+
+  .MuiDataGrid-columnHeader {
+
+    &:focus-within {
+      outline: 0 !important;
+    }
+    .MuiDataGrid-iconSeparator {
+     display: none !important;
+    }
+
+    .MuiDataGrid-columnHeaderTitleContainer {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      /* identical to box height, or 133% */
+
+      text-transform: uppercase;
+
+      color: #707070;
+
+      &:focus {
+        border-color: transparent !important;
+        border-radius: 9px;
+      }
+    }
+  }
+
+  .MuiDataGrid-virtualScroller {
+    background: #FFF;
+  }
+
+  .MuiDataGrid-cell {
+    border-color: #EAECF0 !important;
+  }
+
+  .MuiDataGrid-root {
+    .MuiCheckbox-root {
+      svg {
+        fill: #D0D5DD !important;
+      }
+
+      &.Mui-checked {
+        svg {
+          fill: #101828 !important;
+        }
+      }
+    }
+  }
+}
+
+

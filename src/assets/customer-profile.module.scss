@@ -1,0 +1,153 @@
+.wrapper {
+  background: #FFFFFF;
+  border-radius: 10px;
+  min-height: 600px;
+  margin-top: 32px;
+  padding: 48px;
+
+  & > div:first-child {
+    border-right: 1px solid #E5E5E5;
+    padding: 32px;
+  }
+}
+
+.page_title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+
+  color: #222222;
+}
+
+
+.gridDisplay {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+}
+
+.field {
+  label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    color: #808080;
+  }
+
+  span {
+    width: 100%;
+    height: 52px;
+    padding: 16px;
+
+    /* Gray 200 */
+
+    background: #FAFAFA;
+    border-radius: 10px;
+    display: block;
+    margin-top: 8px;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 19px;
+
+    /* Primary text color */
+
+    color: #101010 !important;
+  }
+}
+
+.transaction {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+
+  border: 1px solid #EAECF0;
+  border-radius: 10px;
+  padding: 16px 24px;
+  margin-top: 16px;
+
+  & > div {
+
+    &:first-child {
+      border-right: 1px solid #D9D9D9;
+      padding-right: 10px;
+    }
+
+    div:first-child {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      /* identical to box height, or 143% */
+
+
+      /* Gray/500 */
+
+      color: #667085;
+    }
+
+    div:nth-child(2) {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      /* identical to box height */
+      letter-spacing: -0.02em;
+
+      /* Gray/900 */
+
+      color: #101828;
+    }
+  }
+}
+
+.overdue {
+  padding: 2px 8px;
+
+  width: 65px;
+  height: 22px;
+
+  /* Error/50 */
+
+  background: #FEF3F2;
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+
+  /* Error/700 */
+
+  color: #B42318;
+  margin-left: 4px;
+}
+
+.pending_payment {
+  small {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+
+    color: #808080;
+
+  }
+
+  .amount {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: right;
+
+    /* Black 900 */
+
+    color: #101010;
+  }
+}

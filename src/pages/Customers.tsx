@@ -1,7 +1,14 @@
 import {BoxGrid} from "../components/BoxGrid";
 import {CardBox} from "../components/CardBox";
-import styles from "../assets/overview.module.scss"
+import styles from "../assets/customers.module.scss"
 import {SearchInput} from "../components/base/SearchInput";
+import IUser from "../interfaces/IUser";
+import getUsers from "../services/getUsers";
+import DataTable from "../components/reusables/DataTable";
+import {GridColDef} from "@mui/x-data-grid";
+import {KYCStatus, TableDate, UserSimpleInfo} from "../services/TableRenderCells";
+import {Link, NavLink} from "react-router-dom";
+import {PROFILE} from "../routes";
 
 interface CustomersOverview {
     title: string;
@@ -10,7 +17,38 @@ interface CustomersOverview {
     increase?: boolean
 }
 
-export function Overview () {
+const headers: GridColDef[] = [
+    {
+        field: 'id',
+        headerName: 'id',
+        renderCell: (params) => (<span>#{params.row.id}</span>)
+    },
+    {
+        field: 'customer',
+        headerName: 'customer',
+        renderCell: (params) => (<UserSimpleInfo data={params.row} type="phone" />),
+        width: 250
+    },
+    {
+        field: 'date',
+        headerName: 'date registered',
+        renderCell: (params) => (<TableDate date={params.row.date} />),
+        width: 200
+    },
+    {
+        field: 'kyc',
+        headerName: 'KYC Status',
+        renderCell: (params) => (<KYCStatus verified={params.row.KYCStatus} />),
+        width: 200
+    },
+    {
+        field: 'actions',
+        headerName: '',
+        renderCell: (params) => (<NavLink to={PROFILE}>View</NavLink>)
+    }
+]
+
+export function Customers () {
     const customersOverview: CustomersOverview[] = [
         {
             title: 'Total customers',
@@ -29,9 +67,11 @@ export function Overview () {
             value: "316"
         }
     ]
+
+    const items: IUser[] = getUsers().splice(0, 3)
     return (
         <div>
-            <h4 className="mb-6 dashboard--page-title">Overview</h4>
+            <h4 className="mb-6 dashboard--page-title">Customers</h4>
             <div>
                 <BoxGrid>
                     {
@@ -51,9 +91,12 @@ export function Overview () {
                     }
                 </BoxGrid>
             </div>
-            <div className={styles.table_box}>
+            <div className={'mt-12'}>
                 <div className="flex justify-between">
-                    <SearchInput label="Search for driver’s name" />
+                    <SearchInput label="Search for customer’s name" />
+                </div>
+                <div className="table w-full mt-4">
+                    <DataTable headers={headers} items={items} />
                 </div>
             </div>
         </div>
